@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/news',[NewsController::class,'index']);
+
+Route::get('/landing', function () {
+    return view('landing');
+});
