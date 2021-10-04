@@ -16,7 +16,10 @@ class NewsController extends Controller
         $news=News::all();
         return view('index',compact('news'));
     }
-
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
     /**
      * Show the form for creating a new resource.
      *

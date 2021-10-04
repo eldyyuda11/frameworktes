@@ -15,11 +15,12 @@ use App\Http\Controllers\NewsController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
 Route::get('/news',[NewsController::class,'index']);
+Route::get('/dashboard',[NewsController::class,'dashboard'])->name('dashboard');
 
-Route::get('/landing', function () {
-    return view('landing');
-});
+// Route::get('/landing', function () {
+//     return view('landing');
+// });
