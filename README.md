@@ -7,7 +7,7 @@ NIM  : 1810817210001
 - Laravel 8
 - PHP 7.4
 - Materialze
-- Bootrap 4/5
+- Bootstrap 4/5
 
 ## Installation
 Clone Repo gitHub ini
