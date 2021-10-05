@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('/news',[NewsController::class,'index']);
 Route::get('/dashboard',[NewsController::class,'dashboard'])->name('dashboard');
+Route::get('/datausers',[UsersController::class,'index'])->name('datausers');
+Route::post('tambahuser',[UsersController::class,'create'])->name('tambahuser');
 
 // Route::get('/landing', function () {
 //     return view('landing');

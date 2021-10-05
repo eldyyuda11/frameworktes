@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>Admin </title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('template/vendors/feather/feather.css')}}"/>
   <link rel="stylesheet" href="{{asset('template/vendors/mdi/css/materialdesignicons.min.css')}}"/>
@@ -45,15 +45,15 @@
       <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
+            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">Admin</span></h1>
             <h3 class="welcome-sub-text">Your performance summary this week </h3>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown d-none d-lg-block">
+          {{-- <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
+              <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -82,7 +82,7 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item d-none d-lg-block">
             <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
               <span class="input-group-addon input-group-prepend border-right">
@@ -373,12 +373,12 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{route('dashboard')}}">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item nav-category">UI Elements</li>
+          {{-- <li class="nav-item nav-category">UI Elements</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
@@ -392,8 +392,8 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
               </ul>
             </div>
-          </li>
-          <li class="nav-item nav-category">Forms and Datas</li>
+          </li> --}}
+          {{-- <li class="nav-item nav-category">Forms and Datas</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="menu-icon mdi mdi-card-text-outline"></i>
@@ -405,8 +405,8 @@
                 <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
               </ul>
             </div>
-          </li>
-          <li class="nav-item">
+          </li> --}}
+          {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
               <i class="menu-icon mdi mdi-chart-line"></i>
               <span class="menu-title">Charts</span>
@@ -417,7 +417,7 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
               </ul>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="menu-icon mdi mdi-table"></i>
@@ -426,11 +426,11 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('datausers')}}">Basic table</a></li>
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">Icons</span>
@@ -441,7 +441,7 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
               </ul>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item nav-category">pages</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
@@ -455,13 +455,13 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">help</li>
+          {{-- <li class="nav-item nav-category">help</li>
           <li class="nav-item">
             <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
               <i class="menu-icon mdi mdi-file-document"></i>
               <span class="menu-title">Documentation</span>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </nav>
       <!-- partial -->
@@ -470,7 +470,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                {{-- <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
@@ -492,10 +492,10 @@
                       <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
                     </div>
                   </div>
-                </div>
+                </div> --}}
                 <div class="tab-content tab-content-basic">
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
-                    <div class="row">
+                    {{-- <div class="row">
                       <div class="col-sm-12">
                         <div class="statistics-details d-flex align-items-center justify-content-between">
                           <div>
@@ -530,7 +530,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> --}}
+
                     <div class="row">
                       <div class="col-lg-8 d-flex flex-column">
                         <div class="row flex-grow">
@@ -604,9 +605,9 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div >
                     <div class="row">
-                      <div class="col-lg-8 d-flex flex-column">
+                      {{-- <div class="col-lg-8 d-flex flex-column"> --}}
                         <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
@@ -641,7 +642,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row flex-grow">
+                        {{-- <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded table-darkBGImg">
                               <div class="card-body">
@@ -654,8 +655,8 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row flex-grow">
+                        </div> --}}
+                        {{-- <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -856,8 +857,8 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row flex-grow">
+                        </div> --}}
+                        {{-- <div class="row flex-grow">
                           <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body card-rounded">
@@ -986,9 +987,9 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 d-flex flex-column">
+                        </div> --}}
+                      {{-- </div> --}}
+                      {{-- <div class="col-lg-4 d-flex flex-column">
                         <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
@@ -1182,8 +1183,10 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
                     </div>
+
+
                   </div>
                 </div>
               </div>
@@ -1207,25 +1210,25 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="{{asset('template/vendors/js/vendor.bundle.base.js')}}"></script>
+  <script src="{{asset('templete/vendors/js/vendor.bundle.base.js')}}"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="{{asset('template/vendors/chart.js/Chart.min.js')}}"></script>
-  <script src="{{asset('template/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
-  <script src="{{asset('template/vendors/progressbar.js/progressbar.min.js')}}"></script>
+  <script src="{{asset('templete/vendors/chart.js/Chart.min.js')}}"></script>
+  <script src="{{asset('templete/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{asset('templete/vendors/progressbar.js/progressbar.min.js')}}"></script>
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="{{asset('template/js/off-canvas.js')}}"></script>
-  <script src="{{asset('template/js/hoverable-collapse.js')}}"></script>
-  <script src="{{asset('template/js/template.js')}}"></script>
-  <script src="{{asset('template/js/settings.js')}}"></script>
-  <script src="{{asset('template/js/todolist.js')}}"></script>
+  <script src="{{asset('templete/js/off-canvas.js')}}"></script>
+  <script src="{{asset('templete/js/hoverable-collapse.js')}}"></script>
+  <script src="{{asset('templete/js/template.js')}}"></script>
+  <script src="{{asset('templete/js/settings.js')}}"></script>
+  <script src="{{asset('templete/js/todolist.js')}}"></script>
 
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="{{asset('template/js/dashboard.js')}}"></script>
-  <script src="{{asset('template/js/Chart.roundedBarCharts.js')}}"></script>
+  <script src="{{asset('templete/js/dashboard.js')}}"></script>
+  <script src="{{asset('templete/js/Chart.roundedBarCharts.js')}}"></script>
   <!-- End custom js for this page-->
 </body>
 

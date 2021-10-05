@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\News;
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
-class NewsController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,26 +14,24 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news=News::all();
-        return view('index',compact('news'));
-    }
-    public function dashboard()
-    {
-        return view('dashboard');
-    }
-    public function dataUser(Request $request)
-    {
         $data=User::all();
         return view('datausers',compact('data'));
     }
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=> Hash::make($request->password),
+            'alamat'=>$request->alamat,
+        ]);
+        return redirect()->back();
     }
 
     /**
