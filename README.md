@@ -3,6 +3,12 @@
 Nama : ELDY YUDA KURNIAWAN \
 NIM  : 1810817210001
 
+## Requirements
+- Laravel 8
+- PHP 7.4
+- Materialze
+- Bootrap 4/5
+
 ## Installation
 Clone Repo gitHub ini
 ```bash
