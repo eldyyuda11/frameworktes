@@ -1,7 +1,12 @@
 # Web Profile Banjarmasin dan tour
 
 Nama : ELDY YUDA KURNIAWAN \
-NIM  : 1810817210001
+NIM  : 1810817210001 \
+Page yang telah dibuat:\
+- Landing Page \
+- Dasboard Admin \
+- Dasboard Tabel Users\
+
 
 ## Requirements
 - Laravel 8
