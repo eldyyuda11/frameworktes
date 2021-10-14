@@ -21,8 +21,12 @@ https://github.com/eldyyuda11/frameworktes.git
 ```
 1. copy .env example menjadi .env
 2. masukan nama database kosong yang telah disediakan
-3. generate key app laravel pada terminal
+3. composer install pada terminal
+4. generate key app laravel pada terminal
 
+```bash
+composer install
+```
 ```bash
 php artisan key:generate
 ```
